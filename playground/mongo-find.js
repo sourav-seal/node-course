@@ -11,17 +11,17 @@ MongoClient.connect('mongodb://localhost:27017/ToDoApp',(err,db)=>{
 		console.log('unable to fetch useers');
 	});*/
 
-/*	db.collection('Users').find({location:'kolkata'}).toArray().then((docs)=>{
+	db.collection('Users').find({location:'kolkata'}).toArray().then((docs)=>{
 		console.log(JSON.stringify(docs,undefined,2));
 	},(err)=>{
 		console.log('unable to fetch useers');
-	});*/
+	});
 	//db.close();
-	db.collection('Users').find({location:'kolkata'}).count().then((count)=>{
+	/*db.collection('Users').find({location:'kolkata'}).count().then((count)=>{
 		console.log(`todos : ${count}`);
 	},(err)=>{
 		console.log('unable to fetch useers');
-	});
+	});*/
 
 });
  
